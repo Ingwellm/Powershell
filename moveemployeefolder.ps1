@@ -10,5 +10,5 @@ $DocumentLocation = 'd:\' #Change to correct location
 $SupervisorName = raw-input "Please enter supervisor login name "
 
 #Copy employee folder to supervisor folder
-copy-item $DocumentLocation\$employee -Destination $DocumentLocation\$SupervisorName
+copy-item $DocumentLocation\$employee -Recurse -Destination $DocumentLocation\$SupervisorName
 
